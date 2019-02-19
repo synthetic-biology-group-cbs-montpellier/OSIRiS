@@ -21,9 +21,9 @@ For execution of the function OSIRiS of this python script, go to the line 292 o
 
 To obtain the intermediate recombinase states of a DNA sequence named sequence_of_interest.gb with the integrases: Bxb1, Tp901 and Int5,
 please uncomment the lines 287 to 292 of the code and define the inputs of the functions such as:
-`name_int=['Bxb1', 'Tp901', 'Int5']
-directory='/Users/sarahguiziou/Desktop/osiris'
-input_file='sequence_of_interest'
+`name_int=['Bxb1', 'Tp901', 'Int5']\n
+directory='/Users/sarahguiziou/Desktop/osiris'\n
+input_file='sequence_of_interest'\n
 directory_list_sites=directory+'/List_Integrases.csv'`
 And execute the function as follow:
 `OSIRIS_script(directory, input_file, name_int, directory_list_sites)`
