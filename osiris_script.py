@@ -305,9 +305,9 @@ Output of the script:
 """
 
 "EXAMPLE"
-name_int=['Bxb1', 'Tp901', 'Int5']
-directory='/Users/sarahguiziou/Desktop/osiris'
-input_file='3-inputV3'
-directory_list_sites=directory+'/List_Integrases.csv'
+#name_int=['Bxb1', 'Tp901', 'Int5']
+#directory='/Users/sarahguiziou/Desktop/osiris'
+#input_file='3-inputV3'
+#directory_list_sites=directory+'/List_Integrases.csv'
 
-OSIRIS_script(directory, input_file, name_int, directory_list_sites)
+#OSIRIS_script(directory, input_file, name_int, directory_list_sites)
