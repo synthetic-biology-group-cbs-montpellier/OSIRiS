@@ -195,23 +195,23 @@ def integrase_site_feature(DNA_seq, name_int):
     # location beginning, location end, Name, strand
     for integrase in range(0,len(name_int)):
         if DNA_seq.find(BF_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(BF_site[integrase]), len(BF_site[integrase]+DNA_seq.find(BF_site[integrase])), 'attB_'+name_int[integrase], 1)
+            list_site_feat.append([DNA_seq.find(BF_site[integrase]), len(BF_site[integrase])+DNA_seq.find(BF_site[integrase]), 'attB_'+name_int[integrase], 1])
         elif DNA_seq.find(BR_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(BR_site[integrase]), len(BR_site[integrase]+DNA_seq.find(BR_site[integrase])), 'attB_'+name_int[integrase], -1)
+            list_site_feat.append([DNA_seq.find(BR_site[integrase]), len(BR_site[integrase])+DNA_seq.find(BR_site[integrase]), 'attB_'+name_int[integrase], -1])
         if DNA_seq.find(PF_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(PF_site[integrase]), len(PF_site[integrase]+DNA_seq.find(PF_site[integrase])), 'attP_'+name_int[integrase], 1)
+            list_site_feat.append([DNA_seq.find(PF_site[integrase]), len(PF_site[integrase])+DNA_seq.find(PF_site[integrase]), 'attP_'+name_int[integrase], 1])
         elif DNA_seq.find(PR_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(PR_site[integrase]), len(PR_site[integrase]+DNA_seq.find(PR_site[integrase])), 'attP_'+name_int[integrase], -1)
+            list_site_feat.append([DNA_seq.find(PR_site[integrase]), len(PR_site[integrase])+DNA_seq.find(PR_site[integrase]), 'attP_'+name_int[integrase], -1])
         if DNA_seq.find(LF_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(LF_site[integrase]), len(LF_site[integrase]+DNA_seq.find(LF_site[integrase])), 'attL_'+name_int[integrase], 1)
+            list_site_feat.append([DNA_seq.find(LF_site[integrase]), len(LF_site[integrase])+DNA_seq.find(LF_site[integrase]), 'attL_'+name_int[integrase], 1])
         elif DNA_seq.find(LR_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(LR_site[integrase]), len(LR_site[integrase]+DNA_seq.find(LR_site[integrase])), 'attL_'+name_int[integrase], -1)
+            list_site_feat.append([DNA_seq.find(LR_site[integrase]), len(LR_site[integrase])+DNA_seq.find(LR_site[integrase]), 'attL_'+name_int[integrase], -1])
         if DNA_seq.find(RF_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(RF_site[integrase]), len(RF_site[integrase]+DNA_seq.find(RF_site[integrase])), 'attR_'+name_int[integrase], 1)
+            list_site_feat.append([DNA_seq.find(RF_site[integrase]), len(RF_site[integrase])+DNA_seq.find(RF_site[integrase]), 'attR_'+name_int[integrase], 1])
         elif DNA_seq.find(RR_site[integrase])!=-1:
-            list_site_feat.append(DNA_seq.find(RR_site[integrase]), len(RR_site[integrase]+DNA_seq.find(RR_site[integrase])), 'attR_'+name_int[integrase], -1)
+            list_site_feat.append([DNA_seq.find(RR_site[integrase]), len(RR_site[integrase])+DNA_seq.find(RR_site[integrase]), 'attR_'+name_int[integrase], -1])
             
-    return list_feat  
+    return list_site_feat  
    
 " CREATE A GB FILE FROM A DNA SEQ AND A LIST OF FEATURES  "         
 
