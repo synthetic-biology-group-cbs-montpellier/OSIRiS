@@ -3,7 +3,7 @@ Python script to obtain the recombination intermediate DNA sequences of any DNA 
 
 ## Installing
 
-OSIRiS code requires Python 2.7 and installation of biopython, please download the module [here](http://biopython.org/wiki/Download) and to install: `pip install biopython`.
+OSIRiS code initally in Python 2.7 updated to python 3 and installation of biopython, please download the module [here](http://biopython.org/wiki/Download) and to install: `pip install biopython`.
 
 To use OSIRiS script, you will also need a csv file containing your integrase sites of interest. This script works only with serine integrases performing irreversible DNA excision and inversion. The four different sites such as attB, attP, attL and attR of each integrase of interest should be provided. A template csv file with sites of some standard integrases can be found here.
 Additionnaly, your DNA sequence of interest must be in genbank format and should be in the directory where the intermediate sequences will be generated. 
